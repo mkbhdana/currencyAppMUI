@@ -240,7 +240,7 @@ export default function SelectTextFields() {
               {" " + state.amount + " " + state.currencyFrom + " = "}
             </p>
             <h4 style={{ color: "steelblue" }}>
-              {state.output + " " + state.currencyTo}
+              {state.output.toFixed(2) + " " + state.currencyTo}
             </h4>
           </div>
         )}
