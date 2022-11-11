@@ -151,6 +151,9 @@ export default function SelectTextFields() {
         }}
         noValidate
         autoComplete="off"
+        onMouseEnter={changeSymbol}
+        onMouseLeave={changeSymbol}
+        onMouseMove={changeSymbol}
       >
         <div>
           <FormControl fullWidth>
@@ -175,6 +178,8 @@ export default function SelectTextFields() {
             label="From"
             value={state.sourceId}
             onChange={currencyFromHandler}
+            onMouseEnter={changeSymbol}
+            onMouseLeave={changeSymbol}
             onMouseMove={changeSymbol}
           >
             {Data.map((option) => (
@@ -196,7 +201,12 @@ export default function SelectTextFields() {
             cursor: "pointer",
           }}
         >
-          <SwapHorizIcon style={{ color: "#56a7c9" }} onClick={flip} onMouseMove={changeSymbol} />
+          <SwapHorizIcon 
+        style={{ color: "#56a7c9" }} 
+        onClick={flip}  
+        onMouseEnter={changeSymbol}
+        onMouseLeave={changeSymbol}
+        onMouseMove={changeSymbol} />
         </div>
 
         <div>
@@ -206,6 +216,8 @@ export default function SelectTextFields() {
             label="To"
             value={state.targetId}
             onChange={currencyToHandler}
+            onMouseEnter={changeSymbol}
+            onMouseLeave={changeSymbol}
             onMouseMove={changeSymbol}
           >
             {Data.map((option) => (
