@@ -196,7 +196,7 @@ export default function SelectTextFields() {
             cursor: "pointer",
           }}
         >
-          <SwapHorizIcon style={{ color: "#56a7c9" }} onClick={flip} />
+          <SwapHorizIcon style={{ color: "#56a7c9" }} onClick={flip} onMouseMove={changeSymbol} />
         </div>
 
         <div>
