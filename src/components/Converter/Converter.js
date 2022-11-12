@@ -65,7 +65,7 @@ export default function SelectTextFields(props) {
         amount: event.target.value,
         showResult: false,
 
-        formIsValid: event.target.value.trim().length,
+        formIsValid: event.target.value >= 1,
       };
     });
   };
