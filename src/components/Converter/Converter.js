@@ -9,7 +9,7 @@ import FormControl from "@mui/material/FormControl";
 
 import Select from "@mui/material/Select";
 
-import Data from "../Data/Data";
+import { Data } from "../Data/Data";
 
 export default function SelectTextFields(props) {
   const [state, setState] = useState({
