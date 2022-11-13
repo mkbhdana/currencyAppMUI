@@ -53,7 +53,7 @@ export default function BasicTabs() {
         sx={{
           borderBottom: 1,
           borderColor: "divider",
-          ".css-1wf8b0h-MuiTabs-flexContainer": {
+          "div.MuiTabs-flexContainer": {
             justifyContent: "space-evenly",
           },
         }}
