@@ -149,7 +149,8 @@ export default function SelectTextFields(props) {
           <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
           <OutlinedInput
             id="outlined-adornment-amount"
-            value={+state.amount}
+            placeholder="0.0"
+            value={state.amount}
             onChange={amountHandler}
             startAdornment={
               <InputAdornment position="start">
