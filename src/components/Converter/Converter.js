@@ -137,7 +137,10 @@ export default function SelectTextFields(props) {
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
+          "@media (max-width: 768px)": {
+            flexDirection: "column",
+            gap: 2,
+          },
         }}
         noValidate
         autoComplete="off"
@@ -167,6 +170,8 @@ export default function SelectTextFields(props) {
             value={state.sourceId}
             onChange={currencyFromHandler}
             onClick={changeSymbol}
+            onMouseEnter={changeSymbol}
+            onMouseLeave={changeSymbol}
           >
             {Data.map((option) => (
               <option key={option.id} value={option.id}>
@@ -200,6 +205,8 @@ export default function SelectTextFields(props) {
             value={state.targetId}
             onChange={currencyToHandler}
             onClick={changeSymbol}
+            onMouseEnter={changeSymbol}
+            onMouseLeave={changeSymbol}
           >
             {Data.map((option) => (
               <option key={option.id} value={option.id}>
