@@ -32,10 +32,10 @@ export default function SelectTextFields(props) {
     setState((prevState) => {
       return {
         ...prevState,
-        currencyFrom: event.target.value,
+        
         sourceId: event.target.value,
         sourceExchangeRate: event.target.value,
-        currencySymbolFrom: event.target.value,
+        
         amount: "",
 
         showResult: false,
@@ -49,7 +49,7 @@ export default function SelectTextFields(props) {
         ...prevState,
         targetId: event.target.value,
         targetExchangeRate: event.target.value,
-        currencyTo: event.target.value,
+        
         amount: "",
 
         showResult: false,
