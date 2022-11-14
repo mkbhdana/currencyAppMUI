@@ -80,7 +80,7 @@ export default function SelectTextFields(props) {
     });
   };
 
-  const changeSymbol = () => {
+  const currencyHandler = () => {
     let fromExchangeRate = "";
     let toExchangeRate = "";
     let fromCurrency = "";
@@ -170,9 +170,9 @@ export default function SelectTextFields(props) {
             label="From"
             value={state.sourceId}
             onChange={currencyFromHandler}
-            onClick={changeSymbol}
-            onMouseEnter={changeSymbol}
-            onMouseLeave={changeSymbol}
+            onClick={currencyHandler}
+            onMouseEnter={currencyHandler}
+            onMouseLeave={currencyHandler}
           >
             {Data.map((option) => (
               <option key={option.id} value={option.id}>
@@ -205,9 +205,9 @@ export default function SelectTextFields(props) {
             label="From"
             value={state.targetId}
             onChange={currencyToHandler}
-            onClick={changeSymbol}
-            onMouseEnter={changeSymbol}
-            onMouseLeave={changeSymbol}
+            onClick={currencyHandler}
+            onMouseEnter={currencyHandler}
+            onMouseLeave={currencyHandler}
           >
             {Data.map((option) => (
               <option key={option.id} value={option.id}>
