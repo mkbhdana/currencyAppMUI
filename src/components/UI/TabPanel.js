@@ -4,7 +4,8 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import BasicTable from "../CurrencyList/CurrencyList";
+import CurrencyListData from "../CurrencyList/CurrencyListData";
+import { Data } from "../Data/Data";
 import SelectTextFields from "../Converter/Converter";
 
 function TabPanel(props) {
@@ -72,7 +73,7 @@ export default function BasicTabs() {
         <SelectTextFields />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <BasicTable />
+        <CurrencyListData data={Data} />
       </TabPanel>
     </Box>
   );
