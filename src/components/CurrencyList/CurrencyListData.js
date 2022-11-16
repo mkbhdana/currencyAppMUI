@@ -27,16 +27,16 @@ function CurrencyListData({ data }) {
       <Table>
         <TableHead>
           <TableRow>
-            {headers.map((header) => (
-              <TableCell align="center">{headerObj[header]}</TableCell>
+            {headers.map((header, index) => (
+              <TableCell align="center" key={index}>{headerObj[header]}</TableCell>
             ))}
           </TableRow>
         </TableHead>
         <TableBody>
           {data.map((emp, index) => (
             <TableRow key={index}>
-              {headers.map((header) => (
-                <TableCell align="center">{emp[header]}</TableCell>
+              {headers.map((header, index) => (
+                <TableCell align="center" key={index}>{emp[header]}</TableCell>
               ))}
             </TableRow>
           ))}
